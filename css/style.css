@@ -67,6 +67,14 @@ ul {
 }
 
 
+#jumbo-text {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+i {
+    background-color: rgba(255, 255, 255, 0);
+}
+
 /*  Card deck: projects */
 .deck-wrapper {
     border: 2px solid black;
