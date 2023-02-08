@@ -1,19 +1,48 @@
-/*  Navbar */
+* {
+    background-color: rgb(134, 161, 161);
+    
+}
 
 
+/* Navbar */
+#nav-title {
+    background-color: rgb(134, 161, 161);
+}
 
+
+.bg-light {
+    background-color: rgb(134, 161, 161) !important;
+    margin-bottom: 40px;
+    border: 2px solid black;
+}
 
 /*  Jumbotron: about me */
-
+.jumbotron {
+    background-color: rgb(134, 161, 161);
+    border: 2px solid black;
+    margin-bottom: 40px;
+}
 
 
 /*  Card deck: projects */
+.deck-wrapper {
+    border: 2px solid black;
+    margin-bottom: 40px;
+    padding: 10px;
+}
+
 #projects-title {
     text-align: center;
 }
 
 
+
+
 /*  Carousel: skills*/
+.carousel-wrapper {
+    border: 2px solid black;
+    margin-bottom: 40px;
+}
 
 #skills-title {
     text-align: center;
@@ -27,17 +56,23 @@
     background-color: aqua;
     max-width: 500px;
     min-width: 300px;
-    
-
 }
 
 .carousel-item {
     height: 200px;
-
 }
 
 
+
+
 /*  Single card: contact me */
+.contact-wrapper {
+    border: 2px solid black;
+    margin-bottom: 40px;
+}
+
+
+
 #contact-title {
     text-align: center;
     margin-bottom: 0px;
@@ -48,6 +83,7 @@
 /*   */
 footer {
     background-color: pink;
+    border: 2px solid black;
 }
 
 
