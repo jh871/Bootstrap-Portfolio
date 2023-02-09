@@ -238,6 +238,10 @@ a:hover {
     text-align: center;
 }
 
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: black;
+
+}
 
 
 
@@ -260,7 +264,7 @@ a:hover {
     
 }
 
-.card-body {
+#contact-card {
     display: flex;
     justify-content: space-around;
 }
@@ -302,17 +306,12 @@ button.close{
     color: white;
 }
 
-/* .modal-dialogue {
-    background-color: black;
-} */
+
 
 .modal-content {
     text-align: center;
     font-family: 'IBM Plex Mono', monospace;
 }
-/* .modal-body {
-    background-color: black;
-} */
 
 .modal-header {
     background-color: black;
@@ -329,4 +328,37 @@ button.close{
     background-color: rgb(177, 82, 255);
     font-size: 1rem;
 }
-/*   */
+
+.location-modal-body {
+    background-image: url("/assets/images/suffolk-outline_crop.png");
+    min-height: 32rem;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+#location-text {
+    padding: 10px;
+    background-color:white;
+    font-size: 2.2rem;
+    color: black;
+}
+
+/*  mediaqueries */
+@media only screen and (max-width: 600px){
+    
+    #nav-title {
+        font-size: 5rem;
+    }
+    .display-4 {
+        font-size: 7rem;
+    }
+    #world {
+        font-size: 5rem;
+    }
+
+    .card-body i {
+        font-size: 3rem;
+    }
+    
+}
