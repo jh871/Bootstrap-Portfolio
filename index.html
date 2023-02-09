@@ -7,16 +7,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Jennifer Hull // Web Developer</title>
     <script src="https://kit.fontawesome.com/9b94255d42.js" crossorigin="anonymous"></script>
+    <!-- FONTS  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=IBM+Plex+Mono&family=Yantramanav:wght@300&display=swap" rel="stylesheet">
+
+    <!--BOOTSTRAP-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!--ICONS-->
     <script src="https://kit.fontawesome.com/9b94255d42.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css" />
 </head>
-
-
-
 
 
 <body>
@@ -52,30 +53,22 @@
 <!--jumbotron to display aboutme with photo-->
     <div class="jumbotron" id="hello">
         <div class="row">
-            <div class="col-lg-6" id="jumbo-col-left">
-            <h1 class="display-4">Hello </h1><h1 id="world">world</h1>
-            <p class="lead">Sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text </p>
+            <div class="col-lg-6 col-sm-12" id="jumbo-col-left">
+            <h1 class="display-4">Hello </h1>
+            <div class="box" id="world-box"><h1 id="world">world</h1></div>
+            
+            <h2 class="lead" id="lead-left"> Front-End Web Design </h2>
             <hr class="my-4"> <!--horizontal rule-->
-            <p id="jumbo-text">
-                icons for skills <br>
 
-
-                
-                
-                
-                
-                icons for contact <br>
-                <i class="fa-solid fa-at fa-3x"></i>
-                <i class="fa-brands fa-twitter fa-3x"></i>
-                <i class="fa-light fa-location-xmark fa-3x"></i>
-                <i class="fa-solid fa-code-merge fa-3x"></i>
-            </p>
             </div>
-            <div class="col-lg-6" id="jumbo-col-right">
+            <div class="col-lg-6 col-sm-12" id="jumbo-col-right">
                 <div class="pfp">
                     <img id="pfp" src="assets/images/pfp_circle-500x500.png" alt="profile photo" />
                 </div>
-                <p class="lead">Sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text </p>
+                <p class="lead" id="lead-right">
+                I am a front-end web design student from the UK, currently studying in a bootcamp to develop skills for a career change.
+                </p>
+                <p>Outside of coding I enjoy tinkering with broken electrics, trying my hand at new things, reading, getting mobbed by animals & learning as much useless info as I can in case going on The Chase becomes national service. </p>
             </div>
         </div>
         <!-- <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> What could this button be for? Take out if nowt-->
@@ -102,7 +95,7 @@
             <img src="assets/images/jsbook-mini-300x200.jpg" class="card-img-top" alt="book about javascript">
             <div class="card-body">
                 <h5 class="card-title">JavaScript Quiz</h5>
-                <p class="card-text"><br>Built in Javascript <br></p>
+                <p class="card-text">Built in Javascript with CSS</p>
                 <p class="card-text"><small class="text-muted">runs in browser</small></p>
             </div>
             <ul class="list-group list-group-flush">
@@ -137,7 +130,7 @@
                 <div class="carousel-item active" id="slide-1" data-interval="1000">
                     
                     <h2> Git</h2>
-                    <i class="fa-brands fa-git-alt fa-7x"></i>
+                    <i class="fa-brands fa-git-alt fa-7x"></i><br>
                     <p>Navigating directories</p>
                     <p>Cloning repositories</p>
                     <p>Committing, pulling and pushing</p>
@@ -145,14 +138,14 @@
                 </div>
                 <div class="carousel-item" id="slide-2">
                     <h2> Github </h2>
-                    <i class="fa-brands fa-github fa-7x"></i>
+                    <i class="fa-brands fa-github fa-7x"></i><br>
                     <p>Creating repositories</p>
                     <p>working on branches</p>
                     <p>Collaborating with others</p>
                 </div>
                 <div class="carousel-item" id="slide-3">
                     <h2> HTML </h2>
-                    <i class="fa-brands fa-html5 fa-7x"></i>
+                    <i class="fa-brands fa-html5 fa-7x"></i><br>
                     <p>Well-structured HTML</p>
                     <p>Proof-reading syntax</p>
                     <p>class and ID naming</p>
@@ -160,21 +153,21 @@
                 <div class="carousel-item" id="slide-4">
                     <h2> CSS with Bootstrap </h2>
                     <i class="fa-brands fa-css3-alt fa-6x"></i>
-                    <i class="fa-brands fa-bootstrap fa-6x"></i>
+                    <i class="fa-brands fa-bootstrap fa-6x"></i><br>
                     <p>Versatile styling</p>
                     <p>Familiarity with docs</p>
                     <p>Great designs</p>
                 </div>
                 <div class="carousel-item" id="slide-5">
                     <h2> Javascript </h2>
-                    <i class="fa-brands fa-js fa-7x"></i>
+                    <i class="fa-brands fa-js fa-7x"></i><br>
                     <p>Functions, loops and iterations</p>
                     <p>methods for different data types</p>
                     <p>dynamic element creation</p>
                 </div>
                 <div class="carousel-item" id="slide-6">
                     <h2> APIs </h2>
-                    <i class="fa-solid fa-link fa-7x"></i>
+                    <i class="fa-solid fa-link fa-7x"></i><br>
                     <p>DOM API</p>
                     <p>Jquery</p>
                     <p>third-party APIs</p>
@@ -197,10 +190,11 @@
 <div class="contact-wrapper" id="contact">
     <h2 id="contact-title">Contact Me</h2>
     <div class="card-body">
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        icons for contact <br>
+        <i class="fa-solid fa-at fa-10x"></i>
+        <i class="fa-brands fa-twitter fa-10x"></i>
+        <i class="fa-solid fa-code-merge fa-10x"></i>
+        <i class="fa-solid fa-location-dot fa-10x"></i>
         <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
     </div>
 </div>

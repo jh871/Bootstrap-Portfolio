@@ -1,6 +1,7 @@
 * {
     /* background-color: rgb(59, 59, 59); */
     font-family: 'IBM Plex Mono', monospace;
+    /* font-family: 'Yantramanav', sans-serif; */
 }
 
 body {
@@ -10,12 +11,14 @@ body {
 /* Navbar */
 #nav-title {
     background-color: rgb(59, 59, 59);
+    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Fredericka the Great', cursive;
     color: rgb(127, 187, 255);
     text-align: center;
     margin: 0;
     padding: 10px;
     font-weight: 900;
-    font-size: 60px;
+    font-size: 6rem;
 }
 
 .bg-light {
@@ -38,6 +41,7 @@ ul {
 }
 
 .navbar-light .navbar-nav .nav-link {
+    font-family: 'Fredericka the Great', cursive;
     color: rgb(60, 215, 253);
     border-bottom: 4px solid black;
     padding: 2px;
@@ -54,25 +58,57 @@ ul {
 }
 
 .display-4 {
+    font-family: 'IBM Plex Mono', monospace !important;
     background-color: rgba(255, 255, 255, 0);
     color: rgb(60, 215, 253);
-    font-size: 170px;
+    font-size: 10rem;
     margin-bottom: 0;
 }
 
 #world {
-    font-size: 130px;
+    font-size: 8rem;
     text-align: right;
     margin-top: -60px;
 }
 
+/* blinking cursor after "world" */
+.box h1 {
+    font-family: 'IBM Plex Mono', monospace !important;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 2px;
+}
+
+@keyframes cursor-blink {
+    0% {
+        opacity: 0;
+    }
+}
+
+
+.box h1::after{
+    content: "";
+    width: 6px;
+    height: 8rem;
+    background: rgb(255, 255, 255);
+    display: inline-block;
+    animation: cursor-blink 1.5s steps(2) infinite;
+}
+
+/* Transparent background */
 #hello {
     background-color: rgba(255, 255, 255, 0);
 }
 
-.lead {
+#lead-left {
     background-color: rgba(255, 255, 255, 0);
     color: rgb(0, 0, 0);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-align: end;
+    padding-right: 20px;
 }
 
 
@@ -100,6 +136,11 @@ i {
 }
 
 
+.jumbo-col-right {
+    justify-self: right;
+}
+
+
 /*  Card deck: projects */
 .deck-wrapper {
     /* border: 2px solid black; */
@@ -108,8 +149,9 @@ i {
 }
 
 #projects-title {
+    font-family: 'Fredericka the Great', cursive;
     text-align: center;
-    font-size: 40px;
+    font-size: 4rem;
 }
 
 .card-deck {
@@ -144,26 +186,33 @@ a:hover {
 
 
 /*  Carousel: skills*/
-.carousel-wrapper {
-
+/* .carousel-wrapper {
     margin-bottom: 40px;
-}
+} */
 
 #skills-title {
+    font-family: 'Fredericka the Great', cursive;
     text-align: center;
-    font-size: 40px;
+    font-size: 4rem;
 }
 #carousel-container {
+    padding-bottom: 40px;
     display: flex;
     justify-content: center;
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(0, 0, 0))
 }
 
 .carousel {
-    background-color: aqua;
+    background-color: rgb(255, 255, 255);
+    color:black;
     max-width: 500px;
     min-width: 500px;
     min-height: 350px;
-    color-interpolation-filters: ;
+
+} 
+
+.carousel i {
+    color: rgb(60, 215, 253);
 }
 
 .carousel-item {
@@ -182,10 +231,13 @@ a:hover {
 
 
 #contact-title {
+    font-family: 'Fredericka the Great', cursive;
+    color: white;
+    background-color: black;
     text-align: center;
     margin-bottom: 0px;
     /* margin-top: 30px; */
-    font-size: 40px;
+    font-size: 4rem;
 }
 
 
