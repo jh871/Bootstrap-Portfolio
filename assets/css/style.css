@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: rgb(59, 59, 59);
+    background-color: rgb(255, 255, 255);
 }
 
 /* Navbar */
@@ -59,6 +59,14 @@ ul {
 .display-4 {
     background-color: rgba(255, 255, 255, 0);
     color: rgb(60, 215, 253);
+    font-size: 100px;
+    margin-bottom: 0;
+}
+
+#world {
+    font-size: 90px;
+    text-align: right;
+    margin-top: -55px;
 }
 
 .lead {
@@ -80,13 +88,14 @@ i {
 
 /*  Card deck: projects */
 .deck-wrapper {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     margin-bottom: 40px;
     padding: 10px;
 }
 
 #projects-title {
     text-align: center;
+    font-size: 40px;
 }
 
 .card-deck {
@@ -104,6 +113,7 @@ i {
 
 #skills-title {
     text-align: center;
+    font-size: 40px;
 }
 #carousel-container {
     display: flex;
@@ -130,11 +140,11 @@ i {
 }
 
 
-
 #contact-title {
     text-align: center;
     margin-bottom: 0px;
-    margin-top: 30px;
+    /* margin-top: 30px; */
+    font-size: 40px;
 }
 
 
