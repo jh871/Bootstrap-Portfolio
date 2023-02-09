@@ -35,7 +35,6 @@ body {
 
 ul {
     font-size: 20px;
-    /* border: 2px solid orangered; */
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -51,22 +50,20 @@ ul {
 /*  Jumbotron: about me */
 .jumbotron {
     background-image: linear-gradient(rgb(59, 59, 59), white);
-    
-    /* border: 2px solid black; */
     margin-bottom: 40px;
 }
 
 .display-4 {
     background-color: rgba(255, 255, 255, 0);
     color: rgb(60, 215, 253);
-    font-size: 150px;
+    font-size: 170px;
     margin-bottom: 0;
 }
 
 #world {
-    font-size: 120px;
+    font-size: 130px;
     text-align: right;
-    margin-top: -55px;
+    margin-top: -60px;
 }
 
 #hello {
@@ -95,10 +92,11 @@ i {
 
 #pfp {
     max-width: 300px;
-    border: 5px solid black;
+    /* border: 5px solid black; */
     border-radius: 50%;
-    box-shadow: 3px 4px 5px;
+    /* box-shadow: 3px 4px 5px; */
     margin: 30px;
+    margin-top: 0;
 }
 
 
@@ -163,13 +161,14 @@ a:hover {
 .carousel {
     background-color: aqua;
     max-width: 500px;
-    min-width: 400px;
-    min-height: 300px;
+    min-width: 500px;
+    min-height: 350px;
     color-interpolation-filters: ;
 }
 
 .carousel-item {
-    height: 200px;
+    padding: 40px;
+    text-align: center;
 }
 
 
