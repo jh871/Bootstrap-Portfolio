@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/9b94255d42.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
 
@@ -48,25 +48,36 @@
     </div>
     </nav>
 
+
 <!--jumbotron to display aboutme with photo-->
     <div class="jumbotron" id="hello">
-        <h1 class="display-4">Hello</h1>
-        <p class="lead col-lg-5">Sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text </p>
-        <hr class="my-4"> <!--horizontal rule-->
-        <p id="jumbo-text" class="col-lg-5">
-            icons for skills <br>
-        <i class="fa-brands fa-git-alt fa-3x"></i>
-        <i class="fa-brands fa-github fa-3x"></i>
-        <i class="fa-brands fa-html5 fa-3x"></i>
-        <i class="fa-brands fa-css3-alt fa-3x"></i>
-        <i class="fa-brands fa-bootstrap fa-3x"></i>
-        <i class="fa-brands fa-js fa-3x"></i><br>
-            icons for contact <br>
-        <i class="fa-solid fa-at fa-3x"></i>
-        <i class="fa-brands fa-twitter fa-3x"></i>
-        <i class="fa-light fa-location-xmark fa-3x"></i>
-        <i class="fa-solid fa-code-merge fa-3x"></i>
-        </p>
+        <div class="row">
+            <div class="col-lg-6" id="jumbo-col-left">
+            <h1 class="display-4">Hello </h1><h1 id="world">world</h1>
+            <p class="lead">Sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text </p>
+            <hr class="my-4"> <!--horizontal rule-->
+            <p id="jumbo-text">
+                icons for skills <br>
+                <i class="fa-brands fa-git-alt fa-3x"></i>
+                <i class="fa-brands fa-github fa-3x"></i>
+                <i class="fa-brands fa-html5 fa-3x"></i>
+                <i class="fa-brands fa-css3-alt fa-3x"></i>
+                <i class="fa-brands fa-bootstrap fa-3x"></i>
+                <i class="fa-brands fa-js fa-3x"></i><br>
+                icons for contact <br>
+                <i class="fa-solid fa-at fa-3x"></i>
+                <i class="fa-brands fa-twitter fa-3x"></i>
+                <i class="fa-light fa-location-xmark fa-3x"></i>
+                <i class="fa-solid fa-code-merge fa-3x"></i>
+            </p>
+            </div>
+            <div class="col-lg-6" id="jumbo-col-right">
+                <div class="pfp">
+                    <img id="pfp" src="">
+                </div>
+                <p class="lead">Sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text sample text </p>
+            </div>
+        </div>
         <!-- <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> What could this button be for? Take out if nowt-->
     </div>
 
@@ -76,7 +87,7 @@
 <h2 id="projects-title"> My work </h2>
     <div class="card-deck">
         <div class="card  col-lg-3 col-sm-12">
-            <img src="..." class="card-img-top" alt="...">
+            <img src="assets/images/keyboard-mini-300x200.jpg" class="card-img-top" alt="white computer keyboard">
             <div class="card-body">
                 <h5 class="card-title">Password Generator</h5>
                 <p class="card-text">Built in Javascript</p>
@@ -88,7 +99,7 @@
             </ul>
         </div>
         <div class="card col-lg-3 col-sm-12">
-            <img src="..." class="card-img-top" alt="...">
+            <img src="assets/images/jsbook-mini-300x200.jpg" class="card-img-top" alt="book about javascript">
             <div class="card-body">
                 <h5 class="card-title">JavaScript Quiz</h5>
                 <p class="card-text"><br>Built in Javascript <br></p>
@@ -100,7 +111,7 @@
             </ul>
         </div>
         <div class="card col-lg-3 col-sm-12">
-            <img src="..." class="card-img-top" alt="...">
+            <img src="assets/images/blackjack-mini-300x234.jpg" class="card-img-top" alt="set of ace cards">
             <div class="card-body">
                 <h5 class="card-title">Blackjack</h5>
                 <p class="card-text">built in Javascript with HTML </p>
