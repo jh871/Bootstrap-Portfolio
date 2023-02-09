@@ -44,7 +44,7 @@ button.navbar-toggler {
 }
 
 ul {
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -80,9 +80,7 @@ ul {
     padding-bottom: 18px;
 }
 
-
 /* blinking cursor after "world" */
-
 .box h1 {
     font-family: 'IBM Plex Mono', monospace !important;
     display: flex;
@@ -104,12 +102,6 @@ ul {
     animation: cursor-blink 1.5s steps(2) infinite;
 }
 
-/* Transparent background */
-
-#hello {
-    background-color: rgba(255, 255, 255, 0);
-}
-
 #lead-left {
     background-color: rgba(255, 255, 255, 0);
     color: rgb(90, 90, 90);
@@ -120,12 +112,7 @@ ul {
     padding-right: 20px;
 }
 
-
 #jumbo-text {
-    background-color: rgba(255, 255, 255, 0);
-}
-
-i {
     background-color: rgba(255, 255, 255, 0);
 }
 
@@ -134,7 +121,6 @@ i {
     text-align: justify;
     font-family: 'IBM Plex Mono', monospace;
 }
-
 
 .pfp {
     display: flex;
@@ -147,7 +133,6 @@ i {
     margin: 30px;
     margin-top: 0;
 }
-
 
 .par1 {
     font-weight: 900;
@@ -163,6 +148,7 @@ i {
     padding-left: 10px;
     border-left: 6px solid rgb(177, 82, 255);
 }
+
 
 
 /*  Card deck: projects */
@@ -212,10 +198,6 @@ a:hover {
 
 
 /*  Carousel: skills*/
-/* .carousel-wrapper {
-    margin-bottom: 40px;
-} */
-
 #skills-title {
     font-family: 'Fredericka the Great', cursive;
     text-align: center;
@@ -254,13 +236,12 @@ a:hover {
 
 
 
-/*  Single card: contact me */
+/*  Large card with icons: contact me */
 .contact-wrapper {
     border: 2px solid black;
     margin-bottom: 40px;
     
 }
-
 
 #contact-title {
     font-family: 'Fredericka the Great', cursive;
@@ -271,6 +252,10 @@ a:hover {
     /* margin-top: 30px; */
     font-size: 4rem;
     
+}
+
+.contact-github-link {
+    font-size: 2rem;
 }
 
 #contact-card {
@@ -284,7 +269,57 @@ a:hover {
 
 
 
-/*   */
+/*  styling modals */
+.modal-title {
+    font-family: 'Fredericka the Great', cursive;
+    text-align: center;
+    color: white;
+}
+
+button.close{
+    color: white;
+}
+button.close:hover {
+    color: rgb(177, 82, 255);
+}
+
+.modal-content {
+    text-align: center;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.modal-header {
+    background-color: black;
+    
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-secondary {
+    background-color: rgb(177, 82, 255);
+    font-size: 1rem;
+}
+
+.location-modal-body {
+    background-image: url("/assets/images/suffolk-outline_crop.png");
+    min-height: 32rem;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#location-text {
+    padding: 10px;
+    background-color:white;
+    font-size: 2.2rem;
+    color: black;
+}
+
+
+
+/*  Footer */
 footer {
     background-color: rgb(0, 0, 0);
     color: white;
@@ -302,56 +337,9 @@ footer a {
 
 #footer-credit {
     font-family: 'Libre Barcode 128 Text', cursive !important;
+    color: rgb(60, 215, 253);
 }
 
-/*  styling modals */
-.modal-title {
-    font-family: 'Fredericka the Great', cursive;
-    text-align: center;
-    color: white;
-}
-
-button.close{
-    color: white;
-}
-
-
-
-.modal-content {
-    text-align: center;
-    font-family: 'IBM Plex Mono', monospace;
-}
-
-.modal-header {
-    background-color: black;
-    
-}
-
-.modal-footer {
-    /* background-color: black; */
-    display: flex;
-    justify-content: center;
-}
-
-.btn-secondary {
-    background-color: rgb(177, 82, 255);
-    font-size: 1rem;
-}
-
-.location-modal-body {
-    background-image: url("/assets/images/suffolk-outline_crop.png");
-    min-height: 32rem;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-
-#location-text {
-    padding: 10px;
-    background-color:white;
-    font-size: 2.2rem;
-    color: black;
-}
 
 /*  mediaqueries */
 @media only screen and (max-width: 600px){
@@ -365,9 +353,7 @@ button.close{
     #world {
         font-size: 5rem;
     }
-
     .card-body i {
         font-size: 3rem;
     }
-    
 }
