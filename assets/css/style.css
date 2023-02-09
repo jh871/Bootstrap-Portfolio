@@ -19,10 +19,19 @@ body {
     font-size: 6rem;
 }
 
+
+.burger-menu {
+    color:rgb(0, 0, 0);
+}
+
+button.navbar-toggler {
+    border: 4px solid rgb(177, 82, 255) !important;
+}
+
 .bg-light {
     background-color: rgb(59, 59, 59) !important;
     margin-bottom: 0px;
-
+    justify-content: center;
 }
 
 .nav-item {
