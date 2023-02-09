@@ -57,10 +57,8 @@
             <h1 class="display-4">Hello </h1>
             <div class="box" id="world-box"><h1 id="world">world</h1></div>
             
-            <h2 class="lead" id="lead-left"> Front End</h2>
-            <!-- <h2 class="lead" id="lead-left"> End </h2> -->
-            <h2 class="lead" id="lead-left"> Web Developer</h2>
-            <!-- <h2 class="lead" id="lead-left"> Design </h2> -->
+            <!-- <h2 class="lead" id="lead-left"> Front End</h2>
+            <h2 class="lead" id="lead-left"> Web Developer</h2> -->
             </div>
             <div class="col-lg-6 col-sm-12" id="jumbo-col-right">
                 <div class="pfp">
@@ -191,21 +189,97 @@
 <div class="contact-wrapper" id="contact">
     <h2 id="contact-title">Contact Me</h2>
     <div class="card-body">
-        icons for contact <br>
-        <i class="fa-solid fa-at fa-10x"></i>
-        <i class="fa-brands fa-twitter fa-10x"></i>
-        <i class="fa-solid fa-code-merge fa-10x"></i>
-        <i class="fa-solid fa-location-dot fa-10x"></i>
-        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+        <i class="fa-solid fa-at fa-10x contact-icon" data-toggle="modal" data-target="#emailModal"></i>        
+        <i class="fa-brands fa-twitter fa-10x contact-icon" data-toggle="modal" data-target="#twitterModal"></i>
+        <i class="fa-solid fa-code-merge fa-10x contact-icon" data-toggle="modal" data-target="#githubModal"></i>
+        <i class="fa-solid fa-location-dot fa-10x contact-icon" data-toggle="modal" data-target="#locationModal"></i>
+    </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="emailModal" tabindex="-1" aria-labelledby="emailModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="emailModalLabel">Email</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                hello@email-jenny.co.uk
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="twitterModal" tabindex="-1" aria-labelledby="twitterModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="twitterModalLabel">Twitter</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Coming soon!
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="githubModal" tabindex="-1" aria-labelledby="githubModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="githubModalLabel">GitHub</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <a class="contact-github-link" href="https://github.com/jh871">jh871</a>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="locationModal" tabindex="-1" aria-labelledby="locationModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="locationModalLabel">Location</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img src="assets/images/pfp_circle-500x500.png">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
     </div>
 </div>
 
 
 
 
+
 <footer>
     <div class="footer-div">
-        <h2> This is the footer footer footer footer footer footer footer footer footer</h2>
+        <h4><i class="fa-solid fa-terminal"></i> You've reached the bottom</h4>
+        <h4><a href="#"><i class="fa-solid fa-circle-arrow-up"></i> Return to top </a></h4>
+        <h2 id="footer-credit"> Designed and built by Jenny Hull</h2>
     </div>
 </footer>
 
