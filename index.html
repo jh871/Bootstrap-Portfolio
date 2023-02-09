@@ -23,12 +23,9 @@
 <body>
     <h1 id=nav-title class="navbar-title" href="#">Jennifer Hull </h1>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-<!-- nav title -->
-<!-- <h1  id=nav-title class="navbar-title" href="#">Jennifer Hull </h1> -->
-
 <!-- toggles hamburger menu -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="burger-menu"><i class="fa-solid fa-bars fa-2x"></i></span>
     </button>
 <!-- nav options -->
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -40,7 +37,7 @@
                 <a class="nav-link" href="#projects">My Work</a>
             </li>
             <li id="nav-my-skills" class="nav-item">
-                <a class="nav-link" href="#skills">My Skills</a>
+                <a class="nav-link" href="#skills">Skills</a>
             </li>
             <li id="nav-contact-me" class="nav-item">
                 <a class="nav-link" href="#contact">Contact Me</a>
@@ -49,12 +46,11 @@
     </div>
     </nav>
 
-
 <!--jumbotron to display aboutme with photo-->
     <div class="jumbotron" id="hello">
         <div class="row">
             <div class="col-lg-6 col-sm-12" id="jumbo-col-left">
-            <h1 class="display-4">Hello </h1>
+            <h1 class="display-4" id="hello">Hello </h1>
             <div class="box" id="world-box"><h1 id="world">world</h1></div>
             
             <!-- <h2 class="lead" id="lead-left"> Front End</h2>
@@ -76,9 +72,9 @@
 <!-- card deck could be used for projects-->
 
 <div class="deck-wrapper" id="projects">
-<h2 id="projects-title"> My work </h2>
+<h2 id="projects-title"> My Work </h2>
     <div class="card-deck">
-        <div class="card col-lg-3 col-sm-12">
+        <div class="card col-lg-4 col-md-12 col-sm-12">
             <img src="assets/images/keyboard-mini-300x200.jpg" class="card-img-top" alt="white computer keyboard">
             <div class="card-body">
                 <h5 class="card-title">Password Generator</h5>
@@ -90,7 +86,7 @@
                 <a class="list-group-item" href="https://github.com/jh871/Password-Generator" target="_blank">github <i class="fa-solid fa-arrow-right"></i></a>
             </ul>
         </div>
-        <div class="card col-lg-3 col-sm-12">
+        <div class="card col-lg-4 col-md-12 col-sm-12">
             <img src="assets/images/jsbook-mini-300x200.jpg" class="card-img-top" alt="book about javascript">
             <div class="card-body">
                 <h5 class="card-title">JavaScript Quiz</h5>
@@ -102,7 +98,7 @@
                 <a class="list-group-item" href="https://github.com/jh871/Code-Quiz" target="_blank">github <i class="fa-solid fa-arrow-right"></i></a>
             </ul>
         </div>
-        <div class="card col-lg-3 col-sm-12">
+        <div class="card col-lg-4 col-md-12 col-sm-12">
             <img src="assets/images/blackjack-mini-300x234.jpg" class="card-img-top" alt="set of ace cards">
             <div class="card-body">
                 <h5 class="card-title">Blackjack</h5>
@@ -117,23 +113,19 @@
     </div>
 </div>
 
-<!-- card with tabs to show skills-->
 
-
-
+<!-- card carousel to show skills-->
 <div class="carousel-wrapper" id="skills">
     <h2 id="skills-title"> Skills </h2>
     <div id="carousel-container">
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active" id="slide-1" data-interval="1000">
-                    
                     <h2> Git</h2>
                     <i class="fa-brands fa-git-alt fa-7x"></i><br>
                     <p>Navigating directories</p>
                     <p>Cloning repositories</p>
                     <p>Committing, pulling and pushing</p>
-                    
                 </div>
                 <div class="carousel-item" id="slide-2">
                     <h2> Github </h2>
@@ -176,7 +168,7 @@
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-target="#carouselExampleSlidesOnly" data-slide="next">
+            <button class="carousel-control-next" id="carousel-control" type="button" data-target="#carouselExampleSlidesOnly" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </button>
@@ -188,7 +180,7 @@
 
 <div class="contact-wrapper" id="contact">
     <h2 id="contact-title">Contact Me</h2>
-    <div class="card-body">
+    <div class="card-body" id="contact-card">
         <i class="fa-solid fa-at fa-10x contact-icon" data-toggle="modal" data-target="#emailModal"></i>        
         <i class="fa-brands fa-twitter fa-10x contact-icon" data-toggle="modal" data-target="#twitterModal"></i>
         <i class="fa-solid fa-code-merge fa-10x contact-icon" data-toggle="modal" data-target="#githubModal"></i>
@@ -209,6 +201,7 @@
             </div>
             <div class="modal-body">
                 hello@email-jenny.co.uk
+                <p>(placeholder)</p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -244,7 +237,7 @@
                 </button>
             </div>
             <div class="modal-body">
-                <a class="contact-github-link" href="https://github.com/jh871">jh871</a>
+                <a class="contact-github-link" href="https://github.com/jh871" target="_blank">jh871</a>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -261,8 +254,9 @@
                 <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <div class="modal-body">
-                <img src="assets/images/pfp_circle-500x500.png">
+            <div class="modal-body location-modal-body">
+                <h3 id="location-text">Suffolk, UK</h3>
+                <!-- <img src="assets/images/suffolk-outline_crop.png"> -->
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
