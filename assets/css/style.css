@@ -1,6 +1,7 @@
 * {
     /* background-color: rgb(59, 59, 59); */
     font-family: 'IBM Plex Mono', monospace;
+    /* font-family: 'Yantramanav', sans-serif; */
 }
 
 body {
@@ -10,12 +11,14 @@ body {
 /* Navbar */
 #nav-title {
     background-color: rgb(59, 59, 59);
+    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Fredericka the Great', cursive;
     color: rgb(127, 187, 255);
     text-align: center;
     margin: 0;
     padding: 10px;
     font-weight: 900;
-    font-size: 60px;
+    font-size: 6rem;
 }
 
 .bg-light {
@@ -38,6 +41,7 @@ ul {
 }
 
 .navbar-light .navbar-nav .nav-link {
+    font-family: 'Fredericka the Great', cursive;
     color: rgb(60, 215, 253);
     border-bottom: 4px solid black;
     padding: 2px;
@@ -97,9 +101,14 @@ ul {
     background-color: rgba(255, 255, 255, 0);
 }
 
-.lead {
+#lead-left {
     background-color: rgba(255, 255, 255, 0);
     color: rgb(0, 0, 0);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-align: end;
+    padding-right: 20px;
 }
 
 
@@ -127,6 +136,11 @@ i {
 }
 
 
+.jumbo-col-right {
+    justify-self: right;
+}
+
+
 /*  Card deck: projects */
 .deck-wrapper {
     /* border: 2px solid black; */
@@ -135,8 +149,9 @@ i {
 }
 
 #projects-title {
+    font-family: 'Fredericka the Great', cursive;
     text-align: center;
-    font-size: 40px;
+    font-size: 4rem;
 }
 
 .card-deck {
@@ -171,26 +186,33 @@ a:hover {
 
 
 /*  Carousel: skills*/
-.carousel-wrapper {
-
+/* .carousel-wrapper {
     margin-bottom: 40px;
-}
+} */
 
 #skills-title {
+    font-family: 'Fredericka the Great', cursive;
     text-align: center;
-    font-size: 40px;
+    font-size: 4rem;
 }
 #carousel-container {
+    padding-bottom: 40px;
     display: flex;
     justify-content: center;
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(0, 0, 0))
 }
 
 .carousel {
-    background-color: aqua;
+    background-color: rgb(255, 255, 255);
+    color:black;
     max-width: 500px;
     min-width: 500px;
     min-height: 350px;
-    color-interpolation-filters: ;
+
+} 
+
+.carousel i {
+    color: rgb(60, 215, 253);
 }
 
 .carousel-item {
@@ -209,10 +231,13 @@ a:hover {
 
 
 #contact-title {
+    font-family: 'Fredericka the Great', cursive;
+    color: white;
+    background-color: black;
     text-align: center;
     margin-bottom: 0px;
     /* margin-top: 30px; */
-    font-size: 40px;
+    font-size: 4rem;
 }
 
 
